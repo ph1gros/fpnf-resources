@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "resources": [
+    {
+      "id": "voice-runtime",
+      "name": "桌宠能说话",
+      "summary": "本地语音合成，包括运行环境、日语 BERT 和音色。安装后可在语音设置中使用。",
+      "license": "正式资源和公开分发许可待确认",
+      "latestVersion": null
+    },
+    {
+      "id": "speech-input",
+      "name": "我能对它说话",
+      "summary": "SenseVoice 本地语音识别模型。识别引擎已包含在主程序内，此资源补齐模型文件。",
+      "license": "正式资源和许可清单待确认",
+      "latestVersion": null
+    }
+  ]
+}
