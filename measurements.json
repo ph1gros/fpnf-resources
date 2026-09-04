@@ -32,11 +32,11 @@
     "maxEntries": 5
   },
   "genie-tts": {
-    "version": "1.0.2",
+    "version": "1.0.3",
     "target": "genie-tts",
-    "sha256": "c5efe2c89061176664b466a6cb709028f1f7196d993169057953dd27add18fc3",
-    "compressedBytes": 178214662,
-    "extractedBytes": 559618334,
+    "sha256": "40bf13befe4e4073532f0e4bc46e15d3cc7820958bebed4673d425d40f75a965",
+    "compressedBytes": 178214950,
+    "extractedBytes": 559619022,
     "maxEntries": 13218
   },
   "genie-data": {

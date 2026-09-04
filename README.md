@@ -15,19 +15,19 @@ For People No Friend 的公开可选语音组件仓库。适用于 Windows x64�
 
 ## 组件清单
 
-所有组件版本为 1.0.0，Genie-TTS 引擎为 1.0.2（包含句尾终止标记修复与保守的长停顿降噪；不改变音频长度或模型权重）。
+所有组件版本为 1.0.0，Genie-TTS 引擎为 1.0.3（包含句尾终止标记修复、保守的长停顿降噪及 HTTP 打断后恢复；不改变音频长度或模型权重）。
 
 | 资源 | 用途 | 下载大小 | 许可 |
 | --- | --- | ---: | --- |
 | [Style-Bert-VITS2 引擎](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/voice-runtime-1.0.0.zip) | 将文字合成为语音，提供 Style-Bert-VITS2 推理程序与独立运行环境。 | 127.65 MiB | AGPL-3.0；部分模块 LGPL-3.0；依赖按各自许可 |
-| [Genie-TTS 引擎](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/genie-tts-1.0.2.zip) | 将文字合成为语音，提供 Genie-TTS 推理程序与独立运行环境。 | 169.96 MiB | 引擎 MIT；依赖和模型按各自许可 |
+| [Genie-TTS 引擎](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/genie-tts-1.0.3.zip) | 将文字合成为语音，提供 Genie-TTS 推理程序与独立运行环境。 | 169.96 MiB | 引擎 MIT；依赖和模型按各自许可 |
 | [Genie 基础模型](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/genie-data-1.0.0.zip) | 为语音合成提供参考音频特征，帮助引擎理解发音与说话人信息，不决定角色音色。 | 270.12 MiB | 上游资源仓库标注 MIT；保留来源及第三方权利说明 |
 | [圣园未花（Mika）音色](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/voice-genie-mika-1.0.0.zip) | 提供圣园未花（Mika）的日语音色，决定角色发声特征；角色出自《蔚蓝档案》。 | 291.38 MiB | 上游仓库标注 MIT；角色及声音权利另行适用，见随附说明 |
 | [日语 DeBERTa 基础模型](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/bert-japanese-1.0.0.zip) | 为语音合成提供日语文本特征，帮助引擎理解读音与上下文，不决定角色音色。 | 348.12 MiB | CC BY-SA 4.0；保留署名、来源和修改说明 |
 | [伊蕾娜音色模型](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/voice-ireina-1.0.0.zip) | 提供伊蕾娜（Ireina）的日语音色，决定角色发声特征；角色出自《魔女之旅》。 | 220.54 MiB | 仅限非商业使用；须保留随附使用说明 |
 | [SenseVoiceSmall 语音识别模型](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/speech-input-1.0.0.zip) | 将录音转换为文字，提供 SenseVoiceSmall 识别模型，供麦克风输入使用。 | 152.88 MiB | FunASR 模型许可；保留模型名称与来源声明 |
 
-全部七项下载共 1.54 GiB（1657430377 字节）。通常只需选择其中一套朗读组件。安装时还需要解压空间，客户端会在下载前检查磁盘余量。
+全部七项下载共 1.54 GiB（1657430665 字节）。通常只需选择其中一套朗读组件。安装时还需要解压空间，客户端会在下载前检查磁盘余量。
 
 ## 来源与使用条件
 
