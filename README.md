@@ -1,43 +1,46 @@
-# FPNF Resources
+# FPNF 资源中心
 
-For People No Friend（FPNF）的公开资源目录，用于查看可选组件的信息。
+For People No Friend 的公开可选语音组件仓库。适用于 Windows x64，配合 FPNF v1.8.0 使用。主程序与组件分开发布，按需下载。
 
-主项目：[ph1gros/for-people-no-friend](https://github.com/ph1gros/for-people-no-friend)。
+[主程序仓库](https://github.com/ph1gros/for-people-no-friend) · [组件下载](https://github.com/ph1gros/fpnf-resources/releases/tag/components-v1.8.0)
 
-## 当前状态
+## 安装
 
-本仓库目前仅包含资源说明目录，尚未提供可安装组件。
+在 FPNF 设置或托盘菜单打开独立的“资源中心”，分别安装需要的引擎、基础模型、音色模型或语音识别模型。刷新目录不会自动安装，也不会替换已经安装的组件。首次启动引擎仍需加载模型，之后复用进程。
 
-| 资源 ID | 用途 | 状态 |
-| --- | --- | --- |
-| `voice-runtime` | 本地语音合成 | 待确认正式资源及分发许可 |
-| `speech-input` | 本地语音识别模型 | 待确认正式资源及许可清单 |
+- 伊蕾娜朗读：Style-Bert-VITS2 引擎 + 日语 DeBERTa 基础模型 + 伊蕾娜音色模型。
+- 未花朗读：Genie-TTS 引擎 + Genie 基础模型 + 圣园未花（Mika）音色。选择 Genie-TTS 后使用内置 Mika 日语预设。
+- 麦克风输入：SenseVoiceSmall 语音识别模型；识别引擎已包含在主程序中。
+- 主程序文字聊天不依赖这些组件。断网时仍可使用已安装的组件；未装齐的组合会显示缺少资源。
 
-`latestVersion: null` 表示尚无正式发布版本。目录列出某项资源不代表该资源已经可以下载或安装。
+## 组件清单
 
-## 目录格式
+所有组件版本为 1.0.0，Genie-TTS 引擎为 1.0.1（修复句尾终止标记被合成为气声）。
 
-根目录的 `catalog.json` 使用 schema 1。每个条目只包含：
+| 资源 | 用途 | 下载大小 | 许可 |
+| --- | --- | ---: | --- |
+| [Style-Bert-VITS2 引擎](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/voice-runtime-1.0.0.zip) | 将文字合成为语音，提供 Style-Bert-VITS2 推理程序与独立运行环境。 | 127.65 MiB | AGPL-3.0；部分模块 LGPL-3.0；依赖按各自许可 |
+| [Genie-TTS 引擎](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/genie-tts-1.0.1.zip) | 将文字合成为语音，提供 Genie-TTS 推理程序与独立运行环境。 | 169.96 MiB | 引擎 MIT；依赖和模型按各自许可 |
+| [Genie 基础模型](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/genie-data-1.0.0.zip) | 为语音合成提供参考音频特征，帮助引擎理解发音与说话人信息，不决定角色音色。 | 270.12 MiB | 上游资源仓库标注 MIT；保留来源及第三方权利说明 |
+| [圣园未花（Mika）音色](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/voice-genie-mika-1.0.0.zip) | 提供圣园未花（Mika）的日语音色，决定角色发声特征；角色出自《蔚蓝档案》。 | 291.38 MiB | 上游仓库标注 MIT；角色及声音权利另行适用，见随附说明 |
+| [日语 DeBERTa 基础模型](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/bert-japanese-1.0.0.zip) | 为语音合成提供日语文本特征，帮助引擎理解读音与上下文，不决定角色音色。 | 348.12 MiB | CC BY-SA 4.0；保留署名、来源和修改说明 |
+| [伊蕾娜音色模型](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/voice-ireina-1.0.0.zip) | 提供伊蕾娜（Ireina）的日语音色，决定角色发声特征；角色出自《魔女之旅》。 | 220.54 MiB | 仅限非商业使用；须保留随附使用说明 |
+| [SenseVoiceSmall 语音识别模型](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/speech-input-1.0.0.zip) | 将录音转换为文字，提供 SenseVoiceSmall 识别模型，供麦克风输入使用。 | 152.88 MiB | FunASR 模型许可；保留模型名称与来源声明 |
 
-- `id`：应用支持的资源标识。
-- `name`：显示名称。
-- `summary`：用途说明。
-- `license`：许可状态说明。
-- `latestVersion`：正式版本号；未发布时为 `null`。
+全部七项下载共 1.54 GiB（1657429532 字节）。通常只需选择其中一套朗读组件。安装时还需要解压空间，客户端会在下载前检查磁盘余量。
 
-目录只提供展示信息，不包含可执行脚本、安装命令、下载地址、哈希授权记录或安装路径。
+## 来源与使用条件
 
-## 应用接入
+- Style-Bert-VITS2 2.7.0：[上游源码](https://github.com/litagin02/Style-Bert-VITS2/tree/d8148f3090ee5038ca7b4e4b327116c64467f952)，源文件、AGPL-3.0 / LGPL-3.0 与依赖声明在组件包内。FPNF 本地接口源文件也随包提供。
+- 日语 DeBERTa：[KU-NLP 原模型](https://huggingface.co/ku-nlp/deberta-v2-large-japanese-char-wwm)、[tsukumijima ONNX 转换](https://huggingface.co/tsukumijima/deberta-v2-large-japanese-char-wwm-onnx)，CC BY-SA 4.0，保留署名和来源；本轮仅分包，未修改权重。
+- SenseVoiceSmall：[FunAudioLLM](https://github.com/FunAudioLLM/SenseVoice)、[sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx)，遵守随附 [FunASR 模型许可](https://github.com/modelscope/FunASR/blob/main/MODEL_LICENSE)。
+- Genie-TTS 2.0.2 与模型：[Genie](https://github.com/High-Logic/Genie)、[固定版本模型来源](https://huggingface.co/High-Logic/Genie/tree/52b17272e0b7032415e85ad37b551db2386b1810)，保留随附 MIT 及依赖声明。Mika 为《蔚蓝档案》圣园未花的日语示例音色，角色及声音权利仍归各自权利人。
+- **伊蕾娜仅限非商业用途**。允许在保留随附说明的前提下非商业复制、分享和再分发，不得用于收费产品、商业服务、转售或变现。角色及声音权利归各自权利人。见包内 LICENSE.txt。
 
-支持资源中心的应用版本可以在 Main 进程启动环境中，通过 `FPNF_RESOURCE_CATALOG_URL` 指向本仓库 `catalog.json` 的 HTTPS 原始文件地址。
-请从 GitHub 文件页面的 Raw 入口获取对应分支的地址。
+本仓库不是一个统一许可的素材库；主项目的非商用条件不改变第三方组件原始许可，也不额外授予角色或声音权利。未包含 OneDrive 的传统 VITS 音色、黑猫模型、训练原始录音、用户配置或对话数据。
 
-刷新目录只更新资源信息，不会自动安装。组件下载路由由独立清单提供；版本、SHA256、大小限制和安装目标由应用内置可信记录决定。
-当前应用中的两个生产记录尚未启用，仅配置本目录不能开启下载。
+## 下载校验与更新
 
-## 后续资源发布
+目录 catalog.json 仅展示资源信息；speech-assets-v1.8.0.json 仅提供组件 ID、版本和下载地址。真正的 SHA-256、大小、文件数和安装目标固定在主程序源码中，下载后核对一致才解压激活；远程仓库不能通过换一个哈希授权新的程序。
 
-发布任何组件之前，必须确认来源和公开再分发许可，并对最终归档实测版本、SHA256、压缩大小、解压大小和条目数。
-需要更新的可信记录随应用发布，远程目录不能覆盖它们。
-
-本仓库当前没有第三方模型、角色、音色或运行时文件，也不授予这些第三方资产的分发许可。
+Release 附带 SHA256SUMS.txt 与 measurements.json 供人工核对，不作为客户端信任来源。未来更换任何组件都需要发布带有新校验记录的主程序，旧版路由文件保持兼容。

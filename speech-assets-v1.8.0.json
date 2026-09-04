@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "tiers": [
+    {
+      "id": "voice-runtime",
+      "version": "1.0.0",
+      "urls": [
+        "https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/voice-runtime-1.0.0.zip"
+      ]
+    },
+    {
+      "id": "speech-input",
+      "version": "1.0.0",
+      "urls": [
+        "https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/speech-input-1.0.0.zip"
+      ]
+    },
+    {
+      "id": "bert-japanese",
+      "version": "1.0.0",
+      "urls": [
+        "https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/bert-japanese-1.0.0.zip"
+      ]
+    },
+    {
+      "id": "voice-ireina",
+      "version": "1.0.0",
+      "urls": [
+        "https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/voice-ireina-1.0.0.zip"
+      ]
+    },
+    {
+      "id": "genie-tts",
+      "version": "1.0.1",
+      "urls": [
+        "https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/genie-tts-1.0.1.zip"
+      ]
+    },
+    {
+      "id": "genie-data",
+      "version": "1.0.0",
+      "urls": [
+        "https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/genie-data-1.0.0.zip"
+      ]
+    },
+    {
+      "id": "voice-genie-mika",
+      "version": "1.0.0",
+      "urls": [
+        "https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/voice-genie-mika-1.0.0.zip"
+      ]
+    }
+  ]
+}
