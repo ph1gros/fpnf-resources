@@ -51,7 +51,7 @@ Genie-TTS 组件升级至 **1.1.2**（上游 Genie-TTS 2.0.2），包含多音�
 | 日语 DeBERTa | [KU-NLP 原模型](https://huggingface.co/ku-nlp/deberta-v2-large-japanese-char-wwm)、[tsukumijima ONNX 版本](https://huggingface.co/tsukumijima/deberta-v2-large-japanese-char-wwm-onnx) | CC BY-SA 4.0；仅分包，未修改权重 |
 | SenseVoiceSmall | [FunAudioLLM / SenseVoice](https://github.com/FunAudioLLM/SenseVoice)、[k2-fsa / sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) | 模型和推理引擎分别遵守其许可 |
 | 伊蕾娜 | FPNF 已有可选音色包，使用 Style-Bert-VITS2 推理；使用说明见 `voice-ireina-1.0.0.zip` 内 LICENSE.txt | 非商业使用；现有记录未列明原训练作者及其公开页面，暂不猜测归属 |
-| 辰星（Astra 配置名“晨星”） | [Blackwood416 / AstraTTS 1.2.2 Windows 整合包](https://github.com/Blackwood416/AstraTTS/releases/tag/1.2.2)；Astra README 致谢的[原模型作者 BreakingBad（AI Hobbyist）发布帖](https://www.ai-hobbyist.com/thread-1143-1-1.html) | 《尘白禁区》角色；5 个 ONNX 文件和 2 段参考录音。仅存于待审 Release 草稿，尚未列为可安装组件；模型和录音再分发许可待确认，不能套用 Astra 引擎 MIT 许可 |
+| 辰星（Astra 配置名“晨星”） | [Blackwood416 / AstraTTS 1.2.2 Windows 整合包](https://github.com/Blackwood416/AstraTTS/releases/tag/1.2.2)；Astra README 致谢的[原模型作者 BreakingBad（AI Hobbyist）发布帖](https://www.ai-hobbyist.com/thread-1143-1-1.html) | 《尘白禁区》角色；5 个 ONNX 文件和 2 段参考录音。已提供[非商业研究预览](https://github.com/ph1gros/fpnf-resources/releases/tag/chenxing-onnx-review-20260908)，尚未列为可安装组件；原始权利说明见 Release，不能套用 Astra 引擎 MIT 许可 |
 
 - Style-Bert-VITS2 2.7.0：[上游源码](https://github.com/litagin02/Style-Bert-VITS2/tree/d8148f3090ee5038ca7b4e4b327116c64467f952)，源文件、AGPL-3.0 / LGPL-3.0 与依赖声明在组件包内。FPNF 本地接口源文件也随包提供。
 - 日语 DeBERTa：[KU-NLP 原模型](https://huggingface.co/ku-nlp/deberta-v2-large-japanese-char-wwm)、[tsukumijima ONNX 转换](https://huggingface.co/tsukumijima/deberta-v2-large-japanese-char-wwm-onnx)，CC BY-SA 4.0，保留署名和来源；本轮仅分包，未修改权重。
@@ -69,3 +69,10 @@ Genie-TTS 组件升级至 **1.1.2**（上游 Genie-TTS 2.0.2），包含多音�
 - v1.8.0 / v1.8.1 继续使用原 [catalog.json](catalog.json) 和 [speech-assets-v1.8.0.json](speech-assets-v1.8.0.json)，保持原内容和兼容性。
 - 远程清单仅提供 ID、版本和下载地址。SHA-256、压缩/解压体积、文件数和安装目标由主程序内置，远程文件无权重新定义。
 - [测量记录](releases/v1.8.2/measurements.json) 与 [SHA256SUMS.txt](releases/v1.8.2/SHA256SUMS.txt) 供人工核对，不是客户端信任来源。组件变更需要配套更新主程序。
+
+## V1.9 开发预览资源
+
+- [辰星 ONNX 音色资源](https://github.com/ph1gros/fpnf-resources/releases/tag/chenxing-onnx-review-20260908)：非商业研究预览，尚未接入一键安装；运行还需要 Astra 引擎与共享基础模型。
+- [声明式时钟小组件](https://github.com/ph1gros/fpnf-resources/releases/tag/widgets-v1.9.0)：clock 1.0.0，490 字节，仅有 JSON 清单。接入新版入口后在“小组件”中安装，默认关闭；v1.8.3 不含此入口。
+
+两项预览不替代现有正式语音组件，也不表示 V1.9 主程序已发布或人工验收通过。
