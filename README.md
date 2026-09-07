@@ -22,11 +22,11 @@ Genie-TTS 组件升级至 **1.1.2**（上游 Genie-TTS 2.0.2），包含多音�
 | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------: | ---------------------------------------------------- |
 | [Style-Bert-VITS2 引擎](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/voice-runtime-1.0.0.zip)           | 将文字合成为语音，提供 Style-Bert-VITS2 推理程序与独立运行环境。                | 127.65 MiB | AGPL-3.0；部分模块 LGPL-3.0；依赖按各自许可          |
 | [Genie-TTS 引擎](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.2/genie-tts-1.1.2.zip)                      | 将文字合成为语音，提供 Genie-TTS 推理程序与独立运行环境。                       | 193.14 MiB | 引擎 MIT；依赖和模型按各自许可                       |
-| [Genie 基础模型](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/genie-data-1.0.0.zip)                     | 为语音合成提供参考音频特征，帮助引擎理解发音与说话人信息，不决定角色音色。      | 270.12 MiB | 上游资源仓库标注 MIT；保留来源及第三方权利说明       |
-| [圣园未花（Mika）音色](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/voice-genie-mika-1.0.0.zip)         | 提供圣园未花（Mika）的日语音色，决定角色发声特征；角色出自《蔚蓝档案》。        | 291.38 MiB | 上游仓库标注 MIT；角色及声音权利另行适用，见随附说明 |
-| [Genie 中英文发音词典](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.2/genie-language-data-1.0.0.zip)      | 为语音合成提供中英文文本读音，帮助引擎处理分词、读音与词性，不决定角色音色。    |  12.57 MiB | 上游仓库标注 MIT；词典与依赖按各自许可，见随附说明   |
-| [菲比（Feibi）音色](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.2/voice-genie-feibi-1.0.0.zip)           | 提供菲比（Feibi）的中文音色，决定角色发声特征；角色出自《鸣潮》。               | 291.20 MiB | 上游仓库标注 MIT；角色及声音权利另行适用，见随附说明 |
-| [37（ThirtySeven）音色](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.2/voice-genie-thirtyseven-1.0.0.zip) | 提供37（ThirtySeven）的英语音色，决定角色发声特征；角色出自《重返未来：1999》。 | 291.61 MiB | 上游仓库标注 MIT；角色及声音权利另行适用，见随附说明 |
+| [Genie 基础模型](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/genie-data-1.0.0.zip)                     | 为语音合成提供参考音频特征，帮助引擎理解发音与说话人信息，不决定角色音色。      | 270.12 MiB | High-Logic/Genie 仓库标注 MIT；保留来源及第三方权利说明       |
+| [圣园未花（Mika）音色](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/voice-genie-mika-1.0.0.zip)         | 提供圣园未花（Mika）的日语音色，决定角色发声特征；角色出自《蔚蓝档案》。        | 291.38 MiB | High-Logic/Genie 仓库标注 MIT；角色及声音权利另行适用，见随附说明 |
+| [Genie 中英文发音词典](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.2/genie-language-data-1.0.0.zip)      | 为语音合成提供中英文文本读音，帮助引擎处理分词、读音与词性，不决定角色音色。    |  12.57 MiB | High-Logic/Genie 仓库标注 MIT；词典与依赖按各自许可，见随附说明   |
+| [菲比（Feibi）音色](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.2/voice-genie-feibi-1.0.0.zip)           | 提供菲比（Feibi）的中文音色，决定角色发声特征；角色出自《鸣潮》。               | 291.20 MiB | High-Logic/Genie 仓库标注 MIT；角色及声音权利另行适用，见随附说明 |
+| [37（ThirtySeven）音色](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.2/voice-genie-thirtyseven-1.0.0.zip) | 提供37（ThirtySeven）的英语音色，决定角色发声特征；角色出自《重返未来：1999》。 | 291.61 MiB | High-Logic/Genie 仓库标注 MIT；角色及声音权利另行适用，见随附说明 |
 | [日语 DeBERTa 基础模型](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/bert-japanese-1.0.0.zip)           | 为语音合成提供日语文本特征，帮助引擎理解读音与上下文，不决定角色音色。          | 348.12 MiB | CC BY-SA 4.0；保留署名、来源和修改说明               |
 | [伊蕾娜音色模型](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/voice-ireina-1.0.0.zip)                   | 提供伊蕾娜（Ireina）的日语音色，决定角色发声特征；角色出自《魔女之旅》。        | 220.54 MiB | 仅限非商业使用；须保留随附使用说明                   |
 | [SenseVoiceSmall 语音识别模型](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/speech-input-1.0.0.zip)     | 将录音转换为文字，提供 SenseVoiceSmall 识别模型，供麦克风输入使用。             | 152.88 MiB | FunASR 模型许可；保留模型名称与来源声明              |
@@ -34,6 +34,24 @@ Genie-TTS 组件升级至 **1.1.2**（上游 Genie-TTS 2.0.2），包含多音�
 全部十项共 2306044318 字节，约 2.15 GiB；通常只需一套朗读组件。安装时还需要解压空间，客户端会检查磁盘余量。
 
 ## 来源与使用条件
+
+本项目按非商业用途整理和使用这些资源。下列来源、版本和原始许可分别适用；非商业用途声明不替代原作者的许可，也不将 MIT、AGPL 等软件许可证改为非商用许可证。
+
+### 逐项来源
+
+| 资源 | 作者 / 项目与具体来源 | 版本与说明 |
+| --- | --- | --- |
+| Genie-TTS 引擎 | [High-Logic / Genie-TTS](https://github.com/High-Logic/Genie-TTS) | 上游引擎 2.0.2；FPNF 组件 1.1.2，附本地接口和修复源码 |
+| Genie 基础模型 | [High-Logic / Genie 的 GenieData](https://huggingface.co/High-Logic/Genie/tree/52b17272e0b7032415e85ad37b551db2386b1810/GenieData) | 固定提交 `52b17272e0b7032415e85ad37b551db2386b1810`；原模型及其依赖按随附说明 |
+| Genie 中英文发音词典 | [High-Logic / Genie 的可选语言资源](https://huggingface.co/High-Logic/Genie/tree/52b17272e0b7032415e85ad37b551db2386b1810/GenieData%28Optional%29) | 同一固定提交；保留词典与依赖声明 |
+| 圣园未花（Mika） | [High-Logic / Genie · v2ProPlus/mika](https://huggingface.co/High-Logic/Genie/tree/52b17272e0b7032415e85ad37b551db2386b1810/CharacterModels/v2ProPlus/mika) | 《蔚蓝档案》角色音色及配套参考录音；同一固定提交 |
+| 菲比（Feibi） | [High-Logic / Genie · v2ProPlus/feibi](https://huggingface.co/High-Logic/Genie/tree/52b17272e0b7032415e85ad37b551db2386b1810/CharacterModels/v2ProPlus/feibi) | 《鸣潮》角色音色及配套参考录音；同一固定提交 |
+| 37（ThirtySeven） | [High-Logic / Genie · v2ProPlus/thirtyseven](https://huggingface.co/High-Logic/Genie/tree/52b17272e0b7032415e85ad37b551db2386b1810/CharacterModels/v2ProPlus/thirtyseven) | 《重返未来：1999》角色音色及配套参考录音；同一固定提交 |
+| Style-Bert-VITS2 引擎 | [litagin02 / Style-Bert-VITS2](https://github.com/litagin02/Style-Bert-VITS2/tree/d8148f3090ee5038ca7b4e4b327116c64467f952) | 2.7.0；AGPL-3.0 / LGPL-3.0 与依赖许可见包内 |
+| 日语 DeBERTa | [KU-NLP 原模型](https://huggingface.co/ku-nlp/deberta-v2-large-japanese-char-wwm)、[tsukumijima ONNX 版本](https://huggingface.co/tsukumijima/deberta-v2-large-japanese-char-wwm-onnx) | CC BY-SA 4.0；仅分包，未修改权重 |
+| SenseVoiceSmall | [FunAudioLLM / SenseVoice](https://github.com/FunAudioLLM/SenseVoice)、[k2-fsa / sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) | 模型和推理引擎分别遵守其许可 |
+| 伊蕾娜 | FPNF 已有可选音色包，使用 Style-Bert-VITS2 推理；使用说明见 `voice-ireina-1.0.0.zip` 内 LICENSE.txt | 非商业使用；现有记录未列明原训练作者及其公开页面，暂不猜测归属 |
+| 辰星（Astra 配置名“晨星”） | [Blackwood416 / AstraTTS 1.2.2 Windows 整合包](https://github.com/Blackwood416/AstraTTS/releases/tag/1.2.2)；Astra README 致谢的[原模型作者 BreakingBad（AI Hobbyist）发布帖](https://www.ai-hobbyist.com/thread-1143-1-1.html) | 《尘白禁区》角色；5 个 ONNX 文件和 2 段参考录音。仅存于待审 Release 草稿，尚未列为可安装组件；模型和录音再分发许可待确认，不能套用 Astra 引擎 MIT 许可 |
 
 - Style-Bert-VITS2 2.7.0：[上游源码](https://github.com/litagin02/Style-Bert-VITS2/tree/d8148f3090ee5038ca7b4e4b327116c64467f952)，源文件、AGPL-3.0 / LGPL-3.0 与依赖声明在组件包内。FPNF 本地接口源文件也随包提供。
 - 日语 DeBERTa：[KU-NLP 原模型](https://huggingface.co/ku-nlp/deberta-v2-large-japanese-char-wwm)、[tsukumijima ONNX 转换](https://huggingface.co/tsukumijima/deberta-v2-large-japanese-char-wwm-onnx)，CC BY-SA 4.0，保留署名和来源；本轮仅分包，未修改权重。
