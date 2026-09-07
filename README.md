@@ -1,33 +1,37 @@
 # FPNF 资源中心
 
-For People No Friend 的公开可选语音组件仓库。适用于 Windows x64，配合 FPNF v1.8.0 使用。主程序与组件分开发布，按需下载。
+For People No Friend 的公开可选语音组件仓库，适用于 Windows x64。当前配合 **FPNF v1.8.2** 使用；主程序与组件分开发布，按需下载。
 
-[主程序仓库](https://github.com/ph1gros/for-people-no-friend) · [组件下载](https://github.com/ph1gros/fpnf-resources/releases/tag/components-v1.8.0)
+[主程序](https://github.com/ph1gros/for-people-no-friend/releases/tag/v1.8.2) · [本次新增组件](https://github.com/ph1gros/fpnf-resources/releases/tag/components-v1.8.2) · [沿用组件](https://github.com/ph1gros/fpnf-resources/releases/tag/components-v1.8.0)
 
 ## 安装
 
-在 FPNF 设置或托盘菜单打开独立的“资源中心”，分别安装需要的引擎、基础模型、音色模型或语音识别模型。刷新目录不会自动安装，也不会替换已经安装的组件。首次启动引擎仍需加载模型，之后复用进程。
+在 FPNF 设置或托盘打开“资源中心”，按引擎、基础模型、音色模型、语音识别四类安装。刷新目录不会自动下载。首次启用仍需加载和预热，文字聊天可以继续使用。
 
-- 伊蕾娜朗读：Style-Bert-VITS2 引擎 + 日语 DeBERTa 基础模型 + 伊蕾娜音色模型。
-- 未花朗读：Genie-TTS 引擎 + Genie 基础模型 + 圣园未花（Mika）音色。选择 Genie-TTS 后使用内置 Mika 日语预设。
-- 麦克风输入：SenseVoiceSmall 语音识别模型；识别引擎已包含在主程序中。
-- 主程序文字聊天不依赖这些组件。断网时仍可使用已安装的组件；未装齐的组合会显示缺少资源。
+- 未花（日语）：Genie-TTS 引擎 + Genie 基础模型 + 圣园未花（Mika）音色。
+- 菲比（中文）与 37（英语）：Genie-TTS 引擎 + Genie 基础模型 + 中英文发音词典 + 对应音色。安装后在主程序语音设置选择预设。
+- 伊蕾娜（日语）：Style-Bert-VITS2 引擎 + 日语 DeBERTa 基础模型 + 伊蕾娜音色模型。
+- 麦克风输入：SenseVoiceSmall 模型，识别引擎已包含在主程序中。
+- v1.8.2 首次运行向导提供未花和伊蕾娜入口；菲比与 37 通过资源中心和主程序语音设置启用。
 
 ## 组件清单
 
-所有组件版本为 1.0.0，Genie-TTS 引擎为 1.0.4（包含句尾终止标记修复、保守的长停顿降噪、HTTP 打断与旧队列清理；不改变音频长度或模型权重）。
+Genie-TTS 组件升级至 **1.1.2**（上游 Genie-TTS 2.0.2），包含多音色支持及已试听的菲比句尾、37 短停顿气声处理。其他组件为 1.0.0。本次上传四个新增或更新的组件，六个未变组件继续使用原有附件，无需重复下载。
 
-| 资源 | 用途 | 下载大小 | 许可 |
-| --- | --- | ---: | --- |
-| [Style-Bert-VITS2 引擎](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/voice-runtime-1.0.0.zip) | 将文字合成为语音，提供 Style-Bert-VITS2 推理程序与独立运行环境。 | 127.65 MiB | AGPL-3.0；部分模块 LGPL-3.0；依赖按各自许可 |
-| [Genie-TTS 引擎](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/genie-tts-1.0.4.zip) | 将文字合成为语音，提供 Genie-TTS 推理程序与独立运行环境。 | 169.96 MiB | 引擎 MIT；依赖和模型按各自许可 |
-| [Genie 基础模型](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/genie-data-1.0.0.zip) | 为语音合成提供参考音频特征，帮助引擎理解发音与说话人信息，不决定角色音色。 | 270.12 MiB | 上游资源仓库标注 MIT；保留来源及第三方权利说明 |
-| [圣园未花（Mika）音色](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/voice-genie-mika-1.0.0.zip) | 提供圣园未花（Mika）的日语音色，决定角色发声特征；角色出自《蔚蓝档案》。 | 291.38 MiB | 上游仓库标注 MIT；角色及声音权利另行适用，见随附说明 |
-| [日语 DeBERTa 基础模型](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/bert-japanese-1.0.0.zip) | 为语音合成提供日语文本特征，帮助引擎理解读音与上下文，不决定角色音色。 | 348.12 MiB | CC BY-SA 4.0；保留署名、来源和修改说明 |
-| [伊蕾娜音色模型](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/voice-ireina-1.0.0.zip) | 提供伊蕾娜（Ireina）的日语音色，决定角色发声特征；角色出自《魔女之旅》。 | 220.54 MiB | 仅限非商业使用；须保留随附使用说明 |
-| [SenseVoiceSmall 语音识别模型](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/speech-input-1.0.0.zip) | 将录音转换为文字，提供 SenseVoiceSmall 识别模型，供麦克风输入使用。 | 152.88 MiB | FunASR 模型许可；保留模型名称与来源声明 |
+| 资源                                                                                                                                     | 用途                                                                            |   下载大小 | 许可                                                 |
+| ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------: | ---------------------------------------------------- |
+| [Style-Bert-VITS2 引擎](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/voice-runtime-1.0.0.zip)           | 将文字合成为语音，提供 Style-Bert-VITS2 推理程序与独立运行环境。                | 127.65 MiB | AGPL-3.0；部分模块 LGPL-3.0；依赖按各自许可          |
+| [Genie-TTS 引擎](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.2/genie-tts-1.1.2.zip)                      | 将文字合成为语音，提供 Genie-TTS 推理程序与独立运行环境。                       | 193.14 MiB | 引擎 MIT；依赖和模型按各自许可                       |
+| [Genie 基础模型](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/genie-data-1.0.0.zip)                     | 为语音合成提供参考音频特征，帮助引擎理解发音与说话人信息，不决定角色音色。      | 270.12 MiB | 上游资源仓库标注 MIT；保留来源及第三方权利说明       |
+| [圣园未花（Mika）音色](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/voice-genie-mika-1.0.0.zip)         | 提供圣园未花（Mika）的日语音色，决定角色发声特征；角色出自《蔚蓝档案》。        | 291.38 MiB | 上游仓库标注 MIT；角色及声音权利另行适用，见随附说明 |
+| [Genie 中英文发音词典](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.2/genie-language-data-1.0.0.zip)      | 为语音合成提供中英文文本读音，帮助引擎处理分词、读音与词性，不决定角色音色。    |  12.57 MiB | 上游仓库标注 MIT；词典与依赖按各自许可，见随附说明   |
+| [菲比（Feibi）音色](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.2/voice-genie-feibi-1.0.0.zip)           | 提供菲比（Feibi）的中文音色，决定角色发声特征；角色出自《鸣潮》。               | 291.20 MiB | 上游仓库标注 MIT；角色及声音权利另行适用，见随附说明 |
+| [37（ThirtySeven）音色](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.2/voice-genie-thirtyseven-1.0.0.zip) | 提供37（ThirtySeven）的英语音色，决定角色发声特征；角色出自《重返未来：1999》。 | 291.61 MiB | 上游仓库标注 MIT；角色及声音权利另行适用，见随附说明 |
+| [日语 DeBERTa 基础模型](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/bert-japanese-1.0.0.zip)           | 为语音合成提供日语文本特征，帮助引擎理解读音与上下文，不决定角色音色。          | 348.12 MiB | CC BY-SA 4.0；保留署名、来源和修改说明               |
+| [伊蕾娜音色模型](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/voice-ireina-1.0.0.zip)                   | 提供伊蕾娜（Ireina）的日语音色，决定角色发声特征；角色出自《魔女之旅》。        | 220.54 MiB | 仅限非商业使用；须保留随附使用说明                   |
+| [SenseVoiceSmall 语音识别模型](https://github.com/ph1gros/fpnf-resources/releases/download/components-v1.8.0/speech-input-1.0.0.zip)     | 将录音转换为文字，提供 SenseVoiceSmall 识别模型，供麦克风输入使用。             | 152.88 MiB | FunASR 模型许可；保留模型名称与来源声明              |
 
-全部七项下载共 1.54 GiB（1657430975 字节）。通常只需选择其中一套朗读组件。安装时还需要解压空间，客户端会在下载前检查磁盘余量。
+全部十项共 2306044318 字节，约 2.15 GiB；通常只需一套朗读组件。安装时还需要解压空间，客户端会检查磁盘余量。
 
 ## 来源与使用条件
 
@@ -39,8 +43,11 @@ For People No Friend 的公开可选语音组件仓库。适用于 Windows x64�
 
 本仓库不是一个统一许可的素材库；主项目的非商用条件不改变第三方组件原始许可，也不额外授予角色或声音权利。未包含 OneDrive 的传统 VITS 音色、黑猫模型、训练原始录音、用户配置或对话数据。
 
+新增菲比来自《鸣潮》，37 来自《重返未来：1999》，均取自上述固定版本的 Genie 上游示例；包内保留来源、依赖与第三方权利说明。公开源码许可不额外授予角色和声音权利。
+
 ## 下载校验与更新
 
-目录 catalog.json 仅展示资源信息；speech-assets-v1.8.0.json 仅提供组件 ID、版本和下载地址。真正的 SHA-256、大小、文件数和安装目标固定在主程序源码中，下载后核对一致才解压激活；远程仓库不能通过换一个哈希授权新的程序。
-
-Release 附带 SHA256SUMS.txt 与 measurements.json 供人工核对，不作为客户端信任来源。未来更换任何组件都需要发布带有新校验记录的主程序，旧版路由文件保持兼容。
+- v1.8.2 目录：[releases/v1.8.2/catalog.json](releases/v1.8.2/catalog.json)。下载路由：[speech-assets-v1.8.2.json](speech-assets-v1.8.2.json)。
+- v1.8.0 / v1.8.1 继续使用原 [catalog.json](catalog.json) 和 [speech-assets-v1.8.0.json](speech-assets-v1.8.0.json)，保持原内容和兼容性。
+- 远程清单仅提供 ID、版本和下载地址。SHA-256、压缩/解压体积、文件数和安装目标由主程序内置，远程文件无权重新定义。
+- [测量记录](releases/v1.8.2/measurements.json) 与 [SHA256SUMS.txt](releases/v1.8.2/SHA256SUMS.txt) 供人工核对，不是客户端信任来源。组件变更需要配套更新主程序。
